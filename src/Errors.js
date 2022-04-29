@@ -43,7 +43,8 @@ export default class Errors {
 
     return {
       status,
-      message: this.errorMessages.getErrorMessage(status),
+      errors,
+      message: errors.message ? errors.message : this.errorMessages.getErrorMessage(status)
     }
   }
 
