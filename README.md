@@ -1,4 +1,4 @@
-# Zaengle Error Handler
+# Error Handler
 
 Handling frontend errors by expecting a specific response can be problematic. In many instances, the code in a `catch` block can cause an error itself. For example:
 
@@ -50,13 +50,13 @@ Useful methods for checking/retrieving specific errors (especially validation er
 ### Yarn
 
 ```bash
-$ yarn add @zaengle/error-handler
+$ yarn add @davmixcool/error-handler
 ```
 
 ### npm
 
 ```bash
-$ npm install @zaengle/error-handler
+$ npm install @davmixcool/error-handler
 ```
 
 ## Usage
@@ -64,7 +64,7 @@ $ npm install @zaengle/error-handler
 ### With Default Error Messages
 
 ```js
-import ErrorHandler from '@zaengle/error-handler'
+import ErrorHandler from '@davmixcool/error-handler'
 
 try {
   // axios call here
@@ -79,7 +79,7 @@ try {
 ### With Custom Error Messages
 
 ```js
-import ErrorHandler from '@zaengle/error-handler'
+import ErrorHandler from '@davmixcool/error-handler'
 
 try {
   // axios call here
@@ -111,7 +111,7 @@ The examples are geared towards Vue/Nuxt applications, but the package is genera
 ```js
 // plugins/error-handler.js
 
-import ErrorHandler from '@zaengle/error-handler'
+import ErrorHandler from '@davmixcool/error-handler'
 
 export default (context, inject) => {
   inject('errorHandler', new ErrorHandler())
