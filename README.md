@@ -1,4 +1,4 @@
-# Error Handler
+# Zaengle Error Handler
 
 Handling frontend errors by expecting a specific response can be problematic. In many instances, the code in a `catch` block can cause an error itself. For example:
 

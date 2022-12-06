@@ -94,3 +94,4 @@ sw.*
 .now
 /assets/css/tailwind.css
 .stylelintrc
+package-lock.json
